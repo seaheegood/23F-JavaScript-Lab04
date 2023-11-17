@@ -17,36 +17,41 @@ async function populate() {
     // STEP 8: Output the iScream JSON object to the console 
     console.log(responseJson);
     // STEP 9a: Invoke the populateHeader function here, then build it below
-
+    populateHeader(responseJson);
     // STEP 10a: Invoke the showTopFlavors function here, then build it below
-
+    showTopFlavors(responseJson);
 }
 
 // STEP 3b: Call the populate() function
 populate();
 /* STEP 9b: Build out the populateHeader() function */
-
-// Create the H1 element
-
-// Grab the company name from the JSON object and use it for the text node
-
-// Inject the complete H1 element into the DOM, inside the HEADER
-
+function populateHeader(jsonData) {
+    // Create the H1 element
+    const h1 = document.createElement("h1"); // <h1></h1>
+    const p = document.createElement("p");
+    // Grab the company name from the JSON object and use it for the text node
+    h1.textContent = jsonData.companyName;
+    p.textContent = `${jsonData.headOffice} - est. ${jsonData.established} - 
+    ${jsonData.active ? "Active" : "Inactive"}`;
+    // Inject the complete H1 element into the DOM, inside the HEADER
+    header.appendChild(h1);
+    header.appendChild(p);
+}
 /* STEP 10b: Assemble the showTopFlavors() function */
+function showTopFlavors(jsonData) {
+    // STEP 10c: Bind the JSON topFlavors object to a var
 
-// STEP 10c: Bind the JSON topFlavors object to a var
 
+    // STEP 10d: Loop through the topFlavors object
 
-// STEP 10d: Loop through the topFlavors object
+    // STEP 10e: build HTML elements for the content: article, h2, image, p1, p2, list
 
-// STEP 10e: build HTML elements for the content: article, h2, image, p1, p2, list
+    // STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
 
-// STEP 10f: Set the textContent property for each of the above elements (except the UL), based on the JSON content
+    // STEP 10g: Build a loop for the ingredients array in the JSON
 
-// STEP 10g: Build a loop for the ingredients array in the JSON
-
-// STEP 10i: Append each complete ARTICLE element to the SECTION element
-
+    // STEP 10i: Append each complete ARTICLE element to the SECTION element
+}
 
 // STEP 11: Add a 3rd flavour of ice cream to the local JSON file, making use of the /images/strawberry-sprinkle.svg image
 
