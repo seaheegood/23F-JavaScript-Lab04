@@ -1,5 +1,5 @@
 {
-    "companyName": "I-Scream Comapny Inc.",
+    "companyName": "I-Scream Company Inc.",
     "headOffice": "North Pole",
     "established": 2023,
     "active": true,
@@ -12,7 +12,7 @@
             "Peppermint Sprinkle",
             "Vanilla Base"
         ],
-        "image": "chocolate-mint.svg"
+        "image": "https://priyansht.github.io/23F-JavaScript-02-Week11/images/chocolate-mint.svg"
     }, {
         "name": "Peach Mango",
         "calories": 350,
@@ -22,6 +22,6 @@
             "Mango Chunks",
             "Vanilla Base"
         ],
-        "image": "peach-mango.svg"
+        "image": "https://priyansht.github.io/23F-JavaScript-02-Week11/images/peach-mango.svg"
     }]
 }
